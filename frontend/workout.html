@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <title>Стартиране на тренировка</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Стартиране на тренировка</h1>
+
+        <section>
+            <label>Програма:</label>
+            <select id="programSelect"></select>
+
+            <label>Тренировъчен ден:</label>
+            <select id="daySelect"></select>
+        </section>
+
+        <div id="workoutDayInfo"></div>
+
+        <h2>Упражнения</h2>
+        <div id="workoutExerciseList"></div>
+
+        <button id="finishWorkoutBtn">Приключи тренировка</button>
+
+        <p id="workoutMessage"></p>
+
+        <section id="feedbackSection" style="display: none;">
+            <h2>Обратна връзка след тренировка</h2>
+
+            <label>Умора след тренировката:</label>
+            <select id="fatigue">
+                <option value="1">1 - много ниска</option>
+                <option value="2">2 - ниска</option>
+                <option value="3" selected>3 - нормална</option>
+                <option value="4">4 - висока</option>
+                <option value="5">5 - много висока</option>
+            </select>
+
+            <label>Бележки:</label>
+            <textarea id="notes" placeholder="Допълнителни бележки..."></textarea>
+
+            <button id="sendFeedbackBtn">Изпрати обратна връзка</button>
+        </section>
+
+        <div id="adaptationResult"></div>
+
+        <nav class="page-nav">
+            <a href="index.html">Начало</a>
+            <a href="program.html">Генериране на програма</a>
+            <a href="workout.html">Стартиране на тренировка</a>
+            <a href="history.html">История на тренировките</a>
+            <button id="logoutBtn" class="nav-logout">Изход</button>
+        </nav>
+    </main>
+
+    <script src="js/authGuard.js"></script>
+    <script src="js/workout.js"></script>
+</body>
+</html>

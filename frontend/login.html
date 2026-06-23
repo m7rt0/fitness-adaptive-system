@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <title>Вход и регистрация</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="container auth-container">
+        <h1>Fitness Adaptive System</h1>
+
+        <p>
+            Влез в профила си или създай нов акаунт, за да използваш персонализирани програми и история.
+        </p>
+
+        <div class="auth-tabs">
+            <button id="showLoginBtn" class="auth-tab active-tab">Вход</button>
+            <button id="showRegisterBtn" class="auth-tab">Регистрация</button>
+        </div>
+
+        <section id="loginForm" class="auth-panel">
+            <h2>Вход</h2>
+
+            <label>Username или email:</label>
+            <input type="text" id="loginIdentifier" placeholder="username или email">
+
+            <label>Парола:</label>
+            <input type="password" id="loginPassword">
+
+            <button id="loginBtn">Вход</button>
+
+            <p id="loginMessage"></p>
+        </section>
+
+        <section id="registerForm" class="auth-panel" style="display: none;">
+            <h2>Регистрация</h2>
+
+            <label>Име:</label>
+            <input type="text" id="firstName" placeholder="Мартин">
+
+            <label>Фамилия:</label>
+            <input type="text" id="lastName" placeholder="Пенев">
+
+            <label>Username:</label>
+            <input type="text" id="username" placeholder="martin_123">
+
+            <label>Email:</label>
+            <input type="text" id="email" placeholder="martin.penev123@gmail.com / martin.penev123@abv.bg">
+
+            <label>Телефон:</label>
+            <input type="text" id="phone" placeholder="0888123456">
+
+            <label>Парола:</label>
+            <input type="password" id="password">
+
+            <button id="registerBtn">Регистрация</button>
+
+            <p id="registerMessage"></p>
+        </section>
+    </main>
+
+    <script src="js/login.js"></script>
+</body>
+</html>

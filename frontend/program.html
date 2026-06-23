@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <title>Генериране на програма</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Генериране на тренировъчна програма</h1>
+
+        <section>
+            <label>Цел:</label>
+            <select id="goal">
+                <option value="muscle_gain">Покачване на мускулна маса</option>
+                <option value="fat_loss">Отслабване</option>
+                <option value="maintenance">Поддържане</option>
+            </select>
+
+            <label>Ниво:</label>
+            <select id="level">
+                <option value="beginner">Начинаещ</option>
+                <option value="intermediate">Средно напреднал</option>
+                <option value="advanced">Напреднал</option>
+            </select>
+
+            <label>Тренировъчни дни:</label>
+            <select id="days">
+                <option value="3">3 дни</option>
+                <option value="4">4 дни</option>
+                <option value="5">5 дни</option>
+            </select>
+
+            <button id="generateBtn">Генерирай програма</button>
+        </section>
+
+        <h2>Генерирана програма</h2>
+        <div id="generatedProgram"></div>
+
+        <h2>Упражнения в базата</h2>
+        <div id="exerciseList"></div>
+
+        <nav class="page-nav">
+            <a href="index.html">Начало</a>
+            <a href="program.html">Генериране на програма</a>
+            <a href="workout.html">Стартиране на тренировка</a>
+            <a href="history.html">История на тренировките</a>
+            <button id="logoutBtn" class="nav-logout">Изход</button>
+        </nav>
+    </main>
+
+    <script src="js/authGuard.js"></script>
+    <script src="js/program.js"></script>
+</body>
+</html>
